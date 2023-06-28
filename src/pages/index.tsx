@@ -44,8 +44,8 @@ export default function Home() {
               <div className="text-center text-white text-[14px] font-normal leading-tight tracking-wide mb-6">
                 Current {isLoadingSolPrice ? <Skeleton className="w-20 h-5" /> : solPrice}
               </div>
-              <WallSvg className="w-full" />
             </div>
+            <WallSvg className="w-full mb-1" />
             <div className="self-stretch h-[440px] flex-col justify-start items-start gap-2 flex overflow-y-auto">
               {chunksData.map((chunk, index) => {
                 return (
